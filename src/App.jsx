@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./index.css";
+import StatsPanel from "./StatsPanel";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="p-8 bg-gray-100 min-h-screen">
       <h1 className="text-3xl font-bold mb-6 text-center">Lista de Productos</h1>
+      <StatsPanel products={products} />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {products.map(product => (
           <div key={product.id} className="border p-4 bg-white rounded shadow hover:shadow-md transition">
