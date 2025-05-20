@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./index.css";
-import StatsPanel from "./StatsPanel";
+import StatsPanel from "./evidencia1/StatsPanel";
 
 function App() {
   const [products, setProducts] = useState([]);
